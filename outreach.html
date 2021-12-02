@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="html, css, natick, Natick High School, Web Design, Review and Know">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Neha Kotturu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lightning Hawks | Outreach</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<link rel="stylesheet" type="text/css" href="css/outreach.css">
+<link rel="shortcut icon" type="image/png" href="images/favicon copy.png"/>
+</head>
+
+<body>
+<nav id="navbar">
+  <input id="nav-toggle" type="checkbox">
+  <div class="title"> <a href="index.html">6032 Lightning Hawks</a> </div>
+  <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="robot.html">Robot</a></li>
+    <li><a href="contact">Contact</a></li>
+  </ul>
+  <label for="nav-toggle" class="icon-burger">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  </label>
+</nav>
+<script>  
+	var lastScrollTop = 0;
+	navbar = document.getElementById("navbar");
+	window.addEventListener("scroll", function(){
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		if(scrollTop > lastScrollTop){
+			navbar.style.top="-6em";
+		} else{
+			navbar.style.top="0";
+		}
+		lastScrollTop = scrollTop;
+	})
+</script> 
+<script>
+		function changeBg(){
+			var navbar = document.getElementById("navbar");
+			var scrollValue = window.scrollY;
+			if(scrollValue < 750) {
+				navbar.classList.remove("bgColor");
+			} else {
+				navbar.classList.add("bgColor");
+			}
+		}
+		
+		window.addEventListener("scroll", changeBg);
+	</script>
+<div id="hero"> <img src="images/outreach team1.png" alt="Team Photo">
+  <div id="heroText">
+    <p>OUR OUTREACH TEAM</p>
+  </div>
+   <a href="#section1"><div id="exploreButton"> Explore!</div></a>
+</div>
+<div class="info" id="section1">
+  <h3>What is outreach to us?</h3>
+  <p>Our team Lightning Hawks has four different parts of outreach that we consider very important. </p>
+  <ul>
+    <li> We believe that our community is one of the important parts of our team identity and as such we make it our mission to give back to our community through our four core initiatives. We support <span style="color: red">our community</span> by participating in local events run by town officials and by running our own community events around town. We also continue to support local businesses by organizing local fundraisers at their establishments and bringing in customers for them. </li>
+    <br>
+    <li> Our second initiative is to preserve <span style="color: red">the environment</span>. This initiative is very crucial to our team, to our community, and to our state as New England is known for its breathtaking forests and scenery. </li>
+    <br>
+    <li> Our third initiative is to give back to <span style="color: red">our school</span>, Natick High School, which spent large sums of money to provide us the robotics lab that we use every year and has supplied us with a landmark STEM curriculum that enhances our abilities. </li>
+    <br>
+    <li> Our final initiative is to support the <span style="color: red">FIRST community</span> which has given us a huge opportunity to explore the fields of robotics and STEM in a fun and competitive environment. </li>
+  </ul>
+</div>
+<div class="events info">
+  <h3>Events</h3>
+  <div class="outreachEvent"> <img src="images/technology tasting.png" alt="Gale, Olivia, and Ian Explaining the Mascot Robot">
+    <h2>Technology Tasting Program</h2>
+    <p>On April 4th, 2018, the Morse Institute Library in Natick invited us to showcase our robots in their Technology Tasting Program. We brought our mascot robot and our competition robot to the event to try and spread the word about FTC and robotics. Around 80 kids came to event and all were allowed to drive our robots. Although we had some technical issues, the kids also enjoyed watching us fix our robot and explaining how it worked. The event was an amazing opportunity for our team to introduce and showcase the Natick High School and Middle School robotics clubs. Not only were the kids interested in our robot, the parents were also very interested in it as well. We explained to them what FTC was and this years Relic Recovery Challenge. One of the parents even introduced us to a possible sponsorship from Cognex. At the end of the day the event was a large success. Many got a taste of technology from our team and we were able to publicize RoboNatick and FTC.</p>
+  </div>
+</div>
+<div class="events info">
+  <div class="outreachEvent"> <img src="images/stem camp.png" alt="Natick High School Lab for April STEM Camp">
+    <h2>April STEM Camp</h2>
+    <p>During the 2017-2018 school year, RoboNatick held another April Stem camp. The camp which took place over april break was designed to allow students (campers) to conduct experiments and engineer solutions in the stem field. The camp took place over four days with each day focusing on a different topic. Tuesday was focused on chemistry and biology, Wednesday was for engineering, Thursday for computer science and Friday for physics.</p>
+  </div>
+</div>
+<div class="events info">
+  <div class="outreachEvent"> <img src="images/fourth of july.png" alt="Noah, Guangchen, and Trevor Setting up for the Parade">
+    <h2>Fourth of July Parade</h2>
+    <p>	Besides being a historic day for our nation, today was an important day for our team and town as we participated in Natick’s 63 annual Fourth of July Parade. We had started to prepare for this event after our competition season ended. Our idea was to have three robots driving down the streets while our competition robot was carted down the parade route. Our Durabot 3000 was already constructed and was ready to be driven. Furthermore, we had some freshmen members start to build an airplane robot that would also drive or “fly” down the streets. Our final robot and most ambitious idea was to have a candy shooting robot. We would have a cartridge of starbursts that fed into fly wheels that would shoot candy to the children watching the parade. Unfortunately, we were unable to complete the candybot, but the parade was still a success.</p>
+  </div>
+</div>
+<div class="events info">
+  <div class="outreachEvent"> <img src="images/natick days.png" alt="Visitors Driving Our Robot at Natick Days">
+    <h2>Natick Days</h2>
+    <p> Natick Days is an annual festival that celebrates the Natick community by providing an opportunity for non-profit groups to increase visibility for the work they do. RoboNatick participated in this event again and we set up a stand advertising and showing off our work. Thousands of people attended this event and we were able to show off our robot to the community. The majority of our time was spent allowing people to drive our robot and explaining about First and robonatick. We were also able to sell donuts for more fundraising. </p>
+  </div>
+</div>
+<div class="events info">
+  <div class="outreachEvent"> <img src="images/library event.png" alt="Mich Driving the Mascot Robot for the Kids">
+    <h2>Local Library Event for Teens</h2>
+    <p> On April 6th, the Morse Institute Library in Natick invited us to showcase our robots in their Technology Tasting Program. We brought our mascot robot and our competition robot to the event to try and spread the word about FTC and robotics. Around 80 kids came to the event. We taught each one the controls to drive our robots, so they could drive themselves. Although we had some technical issues, the kids also enjoyed watching us fix our robot and explaining how it worked. The event was an amazing opportunity for our team to introduce and showcase the Natick High School alongside the middle school robotics clubs. Not only were the kids interested in our robot, the parents were also very interested in it as well. We explained to them what FTC was and last year's challenge, Relic Recovery Challenge. One of the parents even introduced us to a possible sponsorship from Cognex. At the end of the day the event was a huge success. Many got a taste of technology from our team and we were able to publicize RoboNatick and FTC.  </p>
+  </div>
+</div>
+<div class="events info">
+  <div class="outreachEvent"> <img src="images/qualifier.png" alt="All the volunteers at the event">
+    <h2>RedHawk Rumble Qualifier</h2>
+    <p> On February 2nd, the three RoboNatick Teams worked together with organizers from FTC to set up our first-ever state qualifier, Redhawk Ruble. All of the tools and materials were provided to us by car and our first task was to transfer the field equipment from the cars to the auditorium where the event was held. School custodians help us move tables out in the hallway so we were able to set up tables and clear an area for the pit and the practice field. We then set up signs directing teams for judging and where the qualifier was to take place. The following day, the day of the qualifier, we were assigned roles as volunteers and helped make the qualifier run as smoothly as possible. </p>
+  </div>
+</div>
+<div class="events info">
+  <div class="outreachEvent"> <img src="images/robotics camp.png" alt="Noah explaining the design to kids">
+    <h2>New England Sci-Tech Robotics Camp</h2>
+    <p> Our team works with New England Sci-Tech to teach a class about robotics every Friday. The students group up into teams of three to four and collaborate on robots for this year's FLL competition. The kids also compete in battle bot competitions amongst themselves. These activities help the kids understand the FLL community, extending to the field of STEM. We are hoping that the kids join FTC as well once they are eligible to join the team. </p>
+  </div>
+</div>
+<div class="events info">
+  <div class="outreachEvent"> <img src="images/seniorcenter.png" alt="Seniors ready to learn more about computers">
+    <h2>New England Sci-Tech Robotics Camp</h2>
+    <p> On November 18, 2021, our team visited the Natick Senior Center to teach seniors about technology, specifically computers. We had three different groups – surfing the internet, email functions, and miscellaneous – to help them learn multiple skills. In addition, we had a member to help each senior who attended, allowing us to help them with their individual issues. Overall, we were able to help them with things they had trouble doing and understanding, and the event was definitely a success! 
+ </p>
+  </div>
+</div>
+
+<footer>
+	<h6>Website Design and Content Copyright &copy; 2021-2022 Team 6032 Lightning Hawks. All Rights Reserved.</h6>
+</footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  margin: 0;
+  background: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+#hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#hero img {
+  width: 100%;
+  filter: brightness(25%);
+}
+#heroText {
+  position: absolute;
+  width: 100%;
+  top: 35vw;
+  left: 26vw;
+  transform: translate(-50%, -50%);
+}
+#heroText p {
+  font-size: 5vw;
+  padding: 0 2vw;
+  margin: 0;
+}
+#exploreButton {
+  position: absolute;
+  top: 43vw;
+  left: 10.5vw;
+  transform: translate(-50%, -50%);
+  width: 10vw;
+  background-color: #fff;
+  border-radius: 0.5vw;
+  height: 3vw;
+  padding-top: 0.8vw;
+}
+ #hero a {
+  font-size: 1.5vw;
+  color: #003366;
+  text-decoration: none;
+  text-align: center;
+}
+#hero a:checked {
+  color: #003366;
+}
+.info {
+  padding: 1vw 5vw;
+}
+.info h3 {
+  font-size: 2.5vw;
+  color: #003366;
+}
+.info p {
+  font-size: 1.5vw;
+  color: #094d91;
+  line-height: 2;
+}
+.info li {
+  padding: 0.8vw;
+  font-size: 1.2vw;
+  color: #094d91;
+}
+
+
+
+.events h2{
+	color: #033C75;
+}
+
+.events p {
+	font-size: 1.2vw;
+	width: 45%;
+}
+
+.events img {
+	float: right;
+	width: 45vw;
+	padding-top: 5vw;
+}
+
+.outreachEvent {
+	height: 40vw;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 2.5em;
+  text-align: center;
+  background-color: #003366;
+  font-size: 1.5em;
+  clear: both;
+}
+
+h6 {
+  padding-top: 1em;
+  padding-right: 1em;
+  color: white;
+}

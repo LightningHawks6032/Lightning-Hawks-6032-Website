@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="html, css, natick, Natick High School, Web Design, Review and Know">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Neha Kotturu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lightning Hawks | Home</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<!--edit-->
+<link rel="shortcut icon" type="image/png" href="#"/>
+</head>
+
+<body>
+<nav id="navbar">
+  <input id="nav-toggle" type="checkbox">
+  <div class="title"> <a href="index.html">6032 Lightning Hawks</a> </div>
+  <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="robot.html">Robot</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <label for="nav-toggle" class="icon-burger">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  </label>
+</nav>
+<div id="hero"> <img src="images/teampic2.png" alt="Team Photo">
+  <div id="heroText">
+    <p>WE ARE LIGHTNING HAWKS!</p>
+  </div>
+  <a href="#section1">
+  <div id="exploreButton"> Explore!</div>
+  </a> </div>
+<div class="info" id="section1">
+  <h3>Who are we?</h3>
+  <p> We are the Lightning Hawks, FTC Team 6032. We are one of three robotics teams from Natick High School in Natick, MA, competing in the FIRST Tech Challenge. Our team consists of four subteams: the build team, the programming team, the tactical team, and the outreach team. As a public school robotics team, we share funds, materials, tools, and a single mentor with the other Natick High School teams. Formerly known as Rosie's Riveters, our team placed 5th in the Massachusetts State Championship in the 2018-2019 season with the Think Award. Our ultimate goal is to advance to the FTC World Championship. </p>
+</div>
+<div class="info">
+  <h3>2021-2022 Schedule</h3>
+</div>
+<div>
+  <div class="container">
+    <div class="comp"> Qualifier 1</div>
+    <div class="comp"> Qualifier 2</div>
+    <div class="comp"> States Championship</div>
+    <div class="comp"> Worlds Championship</div>
+  </div>
+  <div class="container">
+    <div class="date"> 01/09/22</div>
+    <div class="date"> 01/29/22</div>
+    <div class="date"> 03/05/22</div>
+    <div class="date"> 04/20-23/22</div>
+  </div>
+</div>
+<div class="container">
+  <div id="countdown">
+    <p class="big-text" id="days">0</p>
+    <p>days until qualifier 1</p>
+  </div>
+</div>
+<div class="info">
+  <h3>Thank you to our sponsors!</h3>
+  <div id="companies"> <a href="https://www.mathworks.com/" target="_blank"><img src="images/mathworks new.jpg" alt="Mathworks"></a> <a href="https://www.cognex.com/" target="_blank"><img src="images/cognex new.jpg" alt="Cognex"></a> <a href="https://www.krispykreme.com/" target="_blank"><img src="images/krispy kreme new.jpg" alt="Krispy-Kreme"></a> <a href="https://www.homedepot.com/" target="_blank"><img src="images/home depot new.jpg" alt="Home Depot"></a> </div>
+</div>
+<footer>
+  <h6> Website Design and Content Copyright &copy; 2021-2022 Team 6032 Lightning Hawks. All Rights Reserved.</h6>
+</footer>
+<script>
+	var lastScrollTop = 0;
+	navbar = document.getElementById("navbar");
+	window.addEventListener("scroll", function(){
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		if(scrollTop > lastScrollTop){
+			navbar.style.top="-6em";
+		} else{
+			navbar.style.top="0";
+		}
+		lastScrollTop = scrollTop;
+	})
+	function changeBg(){
+		var navbar = document.getElementById("navbar");
+		var scrollValue = window.scrollY;
+		if(scrollValue == 0) {
+			navbar.classList.remove("bgColor");
+			navbar.classList.remove("bgColor2");
+		}else if(scrollValue < 750 && scrollValue != 0) {
+			navbar.classList.add("bgColor2");
+		} else {
+			navbar.classList.add("bgColor");
+		}
+	}
+		
+	window.addEventListener("scroll", changeBg);
+
+	const daysEl = document.getElementById("days");
+	const secondsEl = document.getElementById("seconds");
+	const newYears = "9 Jan 2022";
+
+	function countdown() {
+		const newYearsDate = new Date(newYears);
+		const currentDate = new Date();
+		const totalSeconds = (newYearsDate - currentDate) / 1000;
+		const days = Math.floor(totalSeconds / 3600 / 24);
+		daysEl.innerHTML = days;
+	}
+	// initial call
+	countdown();
+	setInterval(countdown, 1000);
+</script>
+</body>
+</html>

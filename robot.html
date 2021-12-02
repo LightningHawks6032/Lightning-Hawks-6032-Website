@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="html, css, natick, Natick High School, Web Design, Review and Know">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Neha Kotturu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lightning Hawks | Outreach</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<link rel="stylesheet" type="text/css" href="css/robot.css">
+<link rel="shortcut icon" type="image/png" href="images/favicon copy.png"/>
+</head>
+
+<body>
+<nav id="navbar">
+  <input id="nav-toggle" type="checkbox">
+  <div class="title"> <a href="index.html">6032 Lightning Hawks</a> </div>
+  <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="robot.html">Robot</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <label for="nav-toggle" class="icon-burger">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  </label>
+</nav>
+<script>  
+	var lastScrollTop = 0;
+	navbar = document.getElementById("navbar");
+	window.addEventListener("scroll", function(){
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		if(scrollTop > lastScrollTop){
+			navbar.style.top="-6vw";
+		} else{
+			navbar.style.top="0";
+		}
+		lastScrollTop = scrollTop;
+	})
+</script> 
+<script>
+		function changeBg(){
+			var navbar = document.getElementById("navbar");
+			var scrollValue = window.scrollY;
+			if(scrollValue < 750) {
+				navbar.classList.remove("bgColor");
+			} else {
+				navbar.classList.add("bgColor");
+			}
+		}
+		
+		window.addEventListener("scroll", changeBg);
+	</script>
+<div id="hero"> <img src="images/build team1.png" alt="Team Photo">
+  <div id="heroText">
+    <p>OUR BUILD TEAM</p>
+  </div>
+   <a href="#section1"><div id="exploreButton"> Explore!</div></a>
+</div>
+<div class="info" id="section1">
+  <h3>Why do we use CAD?</h3>
+  <p>We use computer aided design or CAD as a way to plan out our robot while others can build on our physical robot. It is important to us to be able to clearly translate our ideas throughout the team and show a builder what they are supposed to make. CAD has many advantages but the biggest feature we use it for is the design capabilities it holds, we start by making a 3D model of the robot using custom parts and models of Actobotics parts, we use these components to put together our main robot and different components in organized files. Once the 3D model of our components is finished other members can use the model to look around, this takes the pressure of the designers that need to explain how to build it. Our team also really likes to use 3D printed and CNC parts for the robot, they allow us to put any custom piece wherever we want, this opens up any design limitations. Our club has invested in a CNC milling machine and 3D printers that we use to create our parts, our CAD software, Fusion 360, helps us create a mesh to 3D print for our robot and create toolpaths for our CNC milling machine to use. </p>
+</div>
+
+<footer>
+  <h6>Website Design and Content Copyright &copy; 2021-2022 Team 6032 Lightning Hawks. All Rights Reserved.</h6>
+</footer>
+</body>
+</html>

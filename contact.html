@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="html, css, natick, Natick High School, Web Design, Review and Know">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Neha Kotturu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lightning Hawks | Contact Us</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="shortcut icon" type="image/png" href="images/favicon copy.png"/>
+</head>
+
+<body>
+<nav id="navbar">
+  <input id="nav-toggle" type="checkbox">
+  <div class="title"> <a href="index.html">6032 Lightning Hawks</a> </div>
+  <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="robot.html">Robot</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <label for="nav-toggle" class="icon-burger">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  </label>
+</nav>
+
+<script>  
+	var lastScrollTop = 0;
+	navbar = document.getElementById("navbar");
+	window.addEventListener("scroll", function(){
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		if(scrollTop > lastScrollTop){
+			navbar.style.top="-6em";
+		} else{
+			navbar.style.top="0";
+		}
+		lastScrollTop = scrollTop;
+	})
+</script> 
+<script>
+		function changeBg(){
+			var navbar = document.getElementById("navbar");
+			var scrollValue = window.scrollY;
+			if(scrollValue < 750) {
+				navbar.classList.remove("bgColor");
+			} else {
+				navbar.classList.add("bgColor");
+			}
+		}
+		
+		window.addEventListener("scroll", changeBg);
+	</script>
+	
+	
+<div id="hero"> <img src="images/nhs.jpg" alt="Team Photo">
+  <div id="heroText">
+    <p>GET IN TOUCH WITH US!</p>
+  </div>
+   <a href="#section1"><div id="exploreButton"> Contact Us!</div></a>
+</div>
+	
+	
+
+<div class="contact-form">
+  <form id="contact-form" method="post" action="contact-form-handler.php">
+    <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+    <br>
+    <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+    <br>
+    <input name="subject" type="subject" class="form-control" placeholder="Subject" required>
+    <br>
+    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+    <br>
+    <input type="submit" class="form-control submit" value="Send Message">
+  </form>
+</div>
+<footer>
+  <h6>Website Design and Content Copyright &copy; 2021-2022 Team 6032 Lightning Hawks. All Rights Reserved.</h6>
+</footer>
+</body>
+</html>
