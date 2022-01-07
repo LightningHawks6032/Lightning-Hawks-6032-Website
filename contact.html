@@ -41,19 +41,20 @@
 		}
 		lastScrollTop = scrollTop;
 	})
-</script> 
-<script>
-		function changeBg(){
-			var navbar = document.getElementById("navbar");
-			var scrollValue = window.scrollY;
-			if(scrollValue < 750) {
-				navbar.classList.remove("bgColor");
-			} else {
-				navbar.classList.add("bgColor");
-			}
+	function changeBg(){
+		var navbar = document.getElementById("navbar");
+		var scrollValue = window.scrollY;
+		if(scrollValue == 0) {
+			navbar.classList.remove("bgColor");
+			navbar.classList.remove("bgColor2");
+		}else if(scrollValue < 750 && scrollValue != 0) {
+			navbar.classList.add("bgColor2");
+		} else {
+			navbar.classList.add("bgColor");
 		}
+	}
 		
-		window.addEventListener("scroll", changeBg);
+	window.addEventListener("scroll", changeBg);
 	</script>
 	
 	
