@@ -4,89 +4,73 @@ body {
   margin: 0;
   background: #fff;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 #hero {
-	position: relative;
-	text-align: center;
-	color: white;
+  position: relative;
+  text-align: center;
+  color: white;
 }
-
 #hero img {
   width: 100%;
   filter: brightness(25%);
 }
-
-
 #heroText {
-	position: absolute;
-	width: 100%;
-	top: 15em;
+  position: absolute;
+  width: 100%;
+  top: 15em;
 }
-
 #heroText p {
   font-size: 5em;
 }
-
 #exploreButton {
-	position: absolute;
-	top: 25em;
-	left: calc(50% - 7em/2);
-	width: 7em;
-	background-color: #fff;
-	border-radius: 0.3em;
-	height: 2em;
-	padding-top: 0.7em;
+  position: absolute;
+  top: 25em;
+  left: calc(50% - 7em/2);
+  width: 7em;
+  background-color: #fff;
+  border-radius: 0.3em;
+  height: 2em;
+  padding-top: 0.7em;
 }
-
- #hero a {
+#hero a {
   font-size: 1.3em;
   color: #003366;
   text-decoration: none;
   text-align: center;
 }
-
 #hero a:checked {
   color: #003366;
 }
-
 .info {
   padding: 1em 5em;
 }
-
 .info h3 {
   font-size: 2em;
   color: #003366;
 }
-
 .info p {
   font-size: 1.2em;
   color: #094d91;
   line-height: 2;
 }
-
 #countdown .big-text {
   font-size: 5em;
   margin: 0;
   padding: 1.5em 0 0 0;
   color: #094d91;
 }
-
 #countdown p {
   text-align: center;
   color: #094d91;
 }
-
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
   left: -2em;
 }
-
 .comp {
   padding: 0;
   width: 50em;
@@ -95,7 +79,6 @@ html {
   font-size: 1.5em;
   color: #094d91;
 }
-
 .date {
   padding: 0;
   width: 50vw;
@@ -104,11 +87,9 @@ html {
   font-size: 1vw;
   color: #094d91;
 }
-
 #companies {
   width: 100%;
 }
-
 #companies img {
   display: inline-flex;
   float: none;
@@ -117,11 +98,9 @@ html {
   text-align: center;
   width: 15em;
 }
-
 #companies img:hover {
   opacity: 0.6;
 }
-
 footer {
   bottom: 0;
   width: 100%;
@@ -131,137 +110,111 @@ footer {
   font-size: 1.5em;
   clear: both;
 }
-
 h6 {
   padding-top: 1em;
   padding-right: 1em;
   color: white;
 }
-
-
-
 /*Mobile css*/
-
 @media screen and (max-width: 768px) {
-
-#hero img {
-  width: 100%;
-  filter: brightness(25%);
-}
-
-#heroText {
-  width: 100%;
-  top: 12em;
-  transform: translate(-50%, -50%);
-}
-
-#heroText p {
-  font-size: 1.5em;
-}
-
-#exploreButton {
-  top: 15em;
-  left: 6em;
-  transform: translate(-50%, -50%);
-  width: 5em;
-  background-color: #fff;
-  border-radius: 0.3em;
-  height: 1.2em;
-  padding: 0.2em 0;
-}
-
- #hero a {
-  font-size: 1em;
-  color: #003366;
-  text-decoration: none;
-  text-align: center;
-}
-
-#hero a:checked {
-  color: #003366;
-}
-
-.info {
-  padding: 1em 5em;
-}
-
-.info h3 {
-  font-size: 2em;
-  color: #003366;
-}
-
-.info p {
-  font-size: 1.2em;
-  color: #094d91;
-  line-height: 2;
-}
-
-#countdown .big-text {
-  font-size: 5em;
-  margin: 0;
-  padding: 1.5em 0 0 0;
-  color: #094d91;
-}
-
-#countdown p {
-  text-align: center;
-  color: #094d91;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  left: -2em;
-}
-
-.comp {
-  padding: 0;
-  width: 50em;
-  margin: 1em 4em;
-  text-align: center;
-  font-size: 1.5em;
-  color: #094d91;
-}
-
-.date {
-  padding: 0;
-  width: 50vw;
-  margin: 1vw 4vw;
-  text-align: center;
-  font-size: 1vw;
-  color: #094d91;
-}
-
-#companies {
-  width: 100%;
-}
-
-#companies img {
-  display: inline-flex;
-  float: none;
-  margin-top: 2em;
-  padding-right: 4em;
-  text-align: center;
-  width: 15em;
-}
-
-#companies img:hover {
-  opacity: 0.6;
-}
-
-footer {
-  bottom: 0;
-  width: 100%;
-  height: 2.5em;
-  text-align: center;
-  background-color: #003366;
-  font-size: 1.5em;
-  clear: both;
-}
-
-h6 {
-  padding-top: 1em;
-  padding-right: 1em;
-  color: white;
+  #hero img {
+    width: 100%;
+    filter: brightness(25%);
+  }
+  #heroText {
+    width: 100%;
+    top: 12em;
+  }
+  #heroText p {
+    font-size: 1.5em;
+  }
+  #exploreButton {
+    top: 20em;
+    width: 5em;
+    background-color: #fff;
+    border-radius: 0.3em;
+    height: 1.2em;
+    padding: 0.2em 0;
+  }
+  #hero a {
+    font-size: 1em;
+    color: #003366;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hero a:checked {
+    color: #003366;
+  }
+  .info {
+    padding: 1em 5em;
+  }
+  .info h3 {
+    font-size: 2em;
+    color: #003366;
+  }
+  .info p {
+    font-size: 1.2em;
+    color: #094d91;
+    line-height: 2;
+  }
+  #countdown .big-text {
+    font-size: 5em;
+    margin: 0;
+    padding: 1.5em 0 0 0;
+    color: #094d91;
+  }
+  #countdown p {
+    text-align: center;
+    color: #094d91;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: -2em;
+  }
+  .comp {
+    padding: 0;
+    width: 50em;
+    margin: 1em 4em;
+    text-align: center;
+    font-size: 1.5em;
+    color: #094d91;
+  }
+  .date {
+    padding: 0;
+    width: 50vw;
+    margin: 1vw 4vw;
+    text-align: center;
+    font-size: 1vw;
+    color: #094d91;
+  }
+  #companies {
+    width: 100%;
+  }
+  #companies img {
+    display: inline-flex;
+    float: none;
+    margin-top: 2em;
+    padding-right: 4em;
+    text-align: center;
+    width: 15em;
+  }
+  #companies img:hover {
+    opacity: 0.6;
+  }
+  footer {
+    bottom: 0;
+    width: 100%;
+    height: 2.5em;
+    text-align: center;
+    background-color: #003366;
+    font-size: 1.5em;
+    clear: both;
+  }
+  h6 {
+    padding-top: 1em;
+    padding-right: 1em;
+    color: white;
+  }
 }
