@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-
 body {
   margin: 0;
   background: #DCDCDC;
@@ -20,27 +19,22 @@ html {
 #heroText {
   position: absolute;
   width: 100%;
-  top: 35vw;
-  left: 33.5vw;
-  transform: translate(-50%, -50%);
+  top: 15em;
 }
 #heroText p {
-  font-size: 5vw;
-  padding: 0 2vw;
-  margin: 0;
+  font-size: 5em;
 }
 #exploreButton {
   position: absolute;
-  top: 43vw;
-  left: 10.5vw;
-  transform: translate(-50%, -50%);
-  width: 10vw;
+  top: 25em;
+  left: calc(50% - 7em/2);
+  width: 7em;
   background-color: #fff;
-  border-radius: 0.5vw;
-  height: 3vw;
-  padding-top: 0.8vw;
+  border-radius: 0.3em;
+  height: 2em;
+  padding-top: 0.7em;
 }
- #hero a {
+#hero a {
   font-size: 1.5vw;
   color: #003366;
   text-decoration: none;
@@ -49,47 +43,35 @@ html {
 #hero a:checked {
   color: #003366;
 }
-
-
-
-
 .contact-form {
-	padding-left: 30vw;
-	padding-top: 3vw;
-	padding-bottom: 4vw;
+  padding-left: 30vw;
+  padding-top: 3vw;
+  padding-bottom: 4vw;
 }
-
-
 .form-control {
-	width: 40vw;
-	background: transparent;
-	border: none;
-	border-bottom: 0.1vw solid gray;
-	color: #073366;
-	font-size: 1.3vw;
-	margin-bottom: 2vw;
+  width: 40vw;
+  background: transparent;
+  border: none;
+  border-bottom: 0.1vw solid gray;
+  color: #073366;
+  font-size: 1.3vw;
+  margin-bottom: 2vw;
 }
-
-
 input {
-	height: 3vw;
+  height: 3vw;
 }
-
 form > .submit {
-	background: #073366;
-	border-color: transparent;
-	color: #fff;
-	font-size: 1.5vw;
-	letter-spacing: 0.2vw;
-	height: 3vw;
-	margin-top: 2vw;
+  background: #073366;
+  border-color: transparent;
+  color: #fff;
+  font-size: 1.5vw;
+  letter-spacing: 0.2vw;
+  height: 3vw;
+  margin-top: 2vw;
 }
-
-
-
 form > .submit:hover {
-	background-color: #094488;
-	cursor: pointer;
+  background-color: #094488;
+  cursor: pointer;
 }
 footer {
   bottom: 0;
@@ -100,7 +82,6 @@ footer {
   font-size: 1.5em;
   clear: both;
 }
-
 h6 {
   padding-top: 1em;
   padding-right: 1em;
