@@ -19,27 +19,22 @@ html {
 #heroText {
   position: absolute;
   width: 100%;
-  top: 35vw;
-  left: 32vw;
-  transform: translate(-50%, -50%);
+  top: 15em;
 }
 #heroText p {
-  font-size: 5vw;
-  padding: 0 2vw;
-  margin: 0;
+  font-size: 5em;
 }
 #exploreButton {
   position: absolute;
-  top: 43vw;
-  left: 10.5vw;
-  transform: translate(-50%, -50%);
-  width: 10vw;
+  top: 25em;
+  left: calc(50% - 7em/2);
+  width: 7em;
   background-color: #fff;
-  border-radius: 0.5vw;
-  height: 3vw;
-  padding-top: 0.8vw;
+  border-radius: 0.3em;
+  height: 2em;
+  padding-top: 0.7em;
 }
- #hero a {
+#hero a {
   font-size: 1.5vw;
   color: #003366;
   text-decoration: none;
@@ -65,24 +60,20 @@ html {
   font-size: 1.2vw;
   color: #094d91;
 }
-
-.events h2{
-	color: #033C75;
+.events h2 {
+  color: #033C75;
 }
-
 .events p {
-	font-size: 1.2vw;
-	width: 45%;
+  font-size: 1.2vw;
+  width: 45%;
 }
-
 .events img {
-	float: right;
-	width: 45vw;
-	padding-top: 3vw;
+  float: right;
+  width: 45vw;
+  padding-top: 3vw;
 }
-
 .outreachEvent {
-	height: 40vw;
+  height: 40vw;
 }
 footer {
   bottom: 0;
@@ -93,7 +84,6 @@ footer {
   font-size: 1.5em;
   clear: both;
 }
-
 h6 {
   padding-top: 1em;
   padding-right: 1em;
