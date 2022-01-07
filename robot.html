@@ -28,31 +28,32 @@
   <div class="line"></div>
   </label>
 </nav>
-<script>  
+<script>
 	var lastScrollTop = 0;
 	navbar = document.getElementById("navbar");
 	window.addEventListener("scroll", function(){
 		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		if(scrollTop > lastScrollTop){
-			navbar.style.top="-6vw";
+			navbar.style.top="-6em";
 		} else{
 			navbar.style.top="0";
 		}
 		lastScrollTop = scrollTop;
 	})
-</script> 
-<script>
-		function changeBg(){
-			var navbar = document.getElementById("navbar");
-			var scrollValue = window.scrollY;
-			if(scrollValue < 750) {
-				navbar.classList.remove("bgColor");
-			} else {
-				navbar.classList.add("bgColor");
-			}
+	function changeBg(){
+		var navbar = document.getElementById("navbar");
+		var scrollValue = window.scrollY;
+		if(scrollValue == 0) {
+			navbar.classList.remove("bgColor");
+			navbar.classList.remove("bgColor2");
+		}else if(scrollValue < 750 && scrollValue != 0) {
+			navbar.classList.add("bgColor2");
+		} else {
+			navbar.classList.add("bgColor");
 		}
+	}
 		
-		window.addEventListener("scroll", changeBg);
+	window.addEventListener("scroll", changeBg);
 	</script>
 <div id="hero"> <img src="images/build team1.png" alt="Team Photo">
   <div id="heroText">
@@ -63,6 +64,21 @@
 <div class="info" id="section1">
   <h3>Why do we use CAD?</h3>
   <p>We use computer aided design or CAD as a way to plan out our robot while others can build on our physical robot. It is important to us to be able to clearly translate our ideas throughout the team and show a builder what they are supposed to make. CAD has many advantages but the biggest feature we use it for is the design capabilities it holds, we start by making a 3D model of the robot using custom parts and models of Actobotics parts, we use these components to put together our main robot and different components in organized files. Once the 3D model of our components is finished other members can use the model to look around, this takes the pressure of the designers that need to explain how to build it. Our team also really likes to use 3D printed and CNC parts for the robot, they allow us to put any custom piece wherever we want, this opens up any design limitations. Our club has invested in a CNC milling machine and 3D printers that we use to create our parts, our CAD software, Fusion 360, helps us create a mesh to 3D print for our robot and create toolpaths for our CNC milling machine to use. </p>
+</div>
+	
+<div class="info">
+  <h3>Drivetrain</h3>
+  <p>Our drivetrain is based on mecanum wheels, which allow us to strafe the robot while maintaining a 4-wheeled design. The mecanums do this by having each wheel rotate inversely to that of its neighboring wheels. We designed the drivetrain symmetrically using a base of aluminum C-channel in order to give the robot a sturdy foundation with an even center of balance.  We reduced the size of the drivetrain to 12 inches so it could fit in between the wall and the barrier. We believed this would be the easiest and most stable method of traversing the field when the robot is in possession of game elements.</p>
+</div>
+	
+<div class="info">
+  <h3>Intake and Outtake</h3>
+  <p>We use a claw as both our intake and outtake systems. Our initial design used a single motor and controlled the claw directly. However, we found that it was too unstable and unreliable to control. We instead shifted the base of the claw down and implemented a pulley system with two gears for added precision and stability. We included a foam piece on our claw to increase friction, making it more pliant to game elements.</p>
+</div>
+	
+<div class="info">
+  <h3>Compliant Wheels</h3>
+  <p>We felt that spinning the carousel would allow us to maximize our possible points scored. Our compliant wheel serves this purpose  during the end game phase of the match. The compliant wheel is attached to a shaft with a shaft clamp, which is attached to a continuous servo, with a servo to shaft clamping coupler. The whole mechanism is then secured to the robot with two pieces of C-channel to ensure stability when spinning the carousel.</p>
 </div>
 
 <footer>
