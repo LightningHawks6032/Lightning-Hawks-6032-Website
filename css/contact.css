@@ -43,36 +43,95 @@ html {
 #hero a:checked {
   color: #003366;
 }
-.contact-form {
-  padding-left: 30vw;
-  padding-top: 3vw;
-  padding-bottom: 4vw;
+
+.contact-box {
+	display: flex;
+	margin: 3em 5em 0 5em;
 }
-.form-control {
-  width: 40vw;
-  background: transparent;
-  border: none;
-  border-bottom: 0.1vw solid gray;
-  color: #073366;
-  font-size: 1.3vw;
-  margin-bottom: 2vw;
+
+.contact-left {
+	flex-basis: 50%;
+	padding: 40px 60px;
+	background: #fff;
 }
+
+.contact-right {
+	flex-basis: 50%;
+	padding: 40px;
+	background: #003366;
+	color: #fff;
+}
+
+.input-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2em;
+}
+
+.input-row .input-group {
+	flex-basis: 45%;
+}
+
 input {
-  height: 3vw;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	outline: none;
+	padding-bottom: 5px;
 }
-form > .submit {
-  background: #073366;
-  border-color: transparent;
-  color: #fff;
-  font-size: 1.5vw;
-  letter-spacing: 0.2vw;
-  height: 3vw;
-  margin-top: 2vw;
+
+textarea {
+	width: 100%;
+	border: none;
+	border: 2px solid #ccc;
+	outline: none;
+	padding: 10px;
+	box-sizing: border-box;
 }
-form > .submit:hover {
-  background-color: #094488;
-  cursor: pointer;
+
+label {
+	margin-bottom: 1em;
+	display: block;
+	color: #003366;
+	font-size: 1.2em;
 }
+
+#submitBtn {
+	background: #003366;
+	width: 100px;
+	border: none;
+	outline: none;
+	color: #fff;
+	height: 35px;
+	border-radius: 30px;
+	margin-top: 20px;
+	box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+	cursor: pointer;
+}
+
+.contact-left h3 {
+	color: #003366;
+	margin-bottom: 1em;
+	font-size: 2em;
+}
+
+.contact-right h3 {
+	margin-bottom: 1em;
+	font-size: 2em;
+}
+
+
+h5 {
+	padding-bottom: 0.5em;
+	font-size: 1.5em;
+}
+
+h5 svg {
+	margin-right: 1em;
+}
+
+
+
 footer {
   bottom: 0;
   width: 100%;
@@ -82,6 +141,7 @@ footer {
   font-size: 1.5em;
   clear: both;
 }
+
 h6 {
   padding-top: 1em;
   padding-right: 1em;
