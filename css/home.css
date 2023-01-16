@@ -140,7 +140,7 @@ h6 {
     color: #003366;
   }
   .info {
-    padding: 1em 5em;
+    padding: 1em 3em;
   }
   .info h3 {
     font-size: 2em;
@@ -188,8 +188,6 @@ h6 {
     display: inline-flex;
     float: none;
     margin-top: 2em;
-    padding-right: 4em;
-    text-align: center;
   }
   #companies img:hover {
     opacity: 0.6;
