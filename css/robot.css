@@ -89,3 +89,52 @@ h6 {
   padding-right: 1em;
   color: white;
 }
+/*Mobile css*/
+@media screen and (max-width: 768px) {
+  #hero img {
+    width: 100%;
+    filter: brightness(25%);
+  }
+  #heroText {
+    display: none;
+  }
+  #exploreButton {
+    display: none;
+  }
+  #hero a {
+    font-size: 1em;
+    color: #003366;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hero a:checked {
+    color: #003366;
+  }
+  .info {
+    padding: 1em 3em;
+  }
+  .info h3 {
+    font-size: 2em;
+    text-align: center;
+    color: #003366;
+  }
+  .info p {
+    font-size: 1.2em;
+    color: #094d91;
+    line-height: 2;
+  }
+  footer {
+    bottom: 0;
+    width: 100%;
+    height: 5em;
+    text-align: center;
+    background-color: #003366;
+    font-size: 0.5em;
+    clear: both;
+  }
+  h6 {
+    padding: 1em;
+    padding-right: 1em;
+    color: white;
+  }
+}
